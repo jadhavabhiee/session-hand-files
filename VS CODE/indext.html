@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    p{
+        display: none;
+    }
+    div:hover a{
+        display: block;
+
+    }
+    h2:hover{
+        color: darkgoldenrod;
+        
+    }
+    button:hover{
+        /* background-color: darkmagenta; */
+        color: darkblue;
+        opacity: 0.8;
+    }
+    form{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+
+</style>
+<body>
+    <!--select tag-->
+    <h2>This is My Form</h2>
+    <form>
+        <label>Name</label>
+        <input type="text" name="name" placeholder="enter your name" required maxlength="3" pattern="[a-Z]"/>
+    </br>
+    <label>Email</label>
+<input type="email" pattern=".+@gmail.com" required />
+  
+</br>
+<label>password</label>
+<input type="password" minlength="8"pattern="[a-Z]"/>
+
+
+</br>
+<label>phone number</label>
++91<input type="tel" pattern="[0-9]" required  minlength="10" maxlength="10"/>
+
+    <label for="selector">select the product</label>
+    <select id="selector">
+        <option value="Car">Car</option>
+        <option value="Bicyle">Bicyle</option>
+        <option value="Mobile">Mobile</option>
+
+    </select>
+    <button>Click here to submit</button>
+    </form>
+    <!--it tells that 'lable'is bound to or used by 'form' elements-->
+    <div>
+      <a href="https://geekster.in/" target="_blank">this is a link</a>
+      <a href="https://github.com/" target="_blank">this is a link</a>
+    </div>
+</body>
+</html>
